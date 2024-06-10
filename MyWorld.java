@@ -24,7 +24,7 @@ public class MyWorld extends World
         addObject(elephant, 300, 300);
         
         // Create a label
-        scoreLabel = new Label(0,90);
+        scoreLabel = new Label(0,70);
         addObject(scoreLabel, 50, 50);
         
         spawnBanana();
@@ -52,7 +52,7 @@ public class MyWorld extends World
     public void spawnBanana()
     {
        Banana banana = new Banana();
-       int x = Greenfoot.getRandomNumber(600);
+       int x = Greenfoot.getRandomNumber(300);
        int y = 0;
        addObject(banana, 300, 0);
     }
