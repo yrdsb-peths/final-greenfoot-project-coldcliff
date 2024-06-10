@@ -17,7 +17,7 @@ public class Banana extends Actor
      
     public void act()
     {
-        // Apple falls downwards
+        // Banana falls downwards
         int x = getX();
         int y = getY() + speed;
         setLocation(x, y);

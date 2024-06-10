@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TitleScreen here.
+ * Title Screen
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Clifford
+ * @version March 2024
  */
 public class TitleScreen extends World
 {
@@ -26,6 +26,7 @@ public class TitleScreen extends World
      */
     public void act()
     {
+        // Start the game if user presses the space bar
         if(Greenfoot.isKeyDown("space"))
         {
             MyWorld gameWorld = new MyWorld();
@@ -41,7 +42,7 @@ public class TitleScreen extends World
          Elephant elephant = new Elephant();
         addObject(elephant,getWidth()/2,getHeight()/2);
         Label label = new Label("Press <space> to Start", 40);
-        addObject(label,getWidth()/2,345);
+        addObject(label,333,345);
         Label label2 = new Label("Use \u2190 & \u2192 to Move", 40);
         addObject(label2,getWidth()/2,300);
     }
